@@ -942,7 +942,7 @@ MonoBehaviour:
   NetworkConfig:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 1520177942}
-    PlayerPrefab: {fileID: 3088307325611145763, guid: 6c09c8ffcc874a84b922ee783811f4a4, type: 3}
+    PlayerPrefab: {fileID: 4121505367513483591, guid: 6c09c8ffcc874a84b922ee783811f4a4, type: 3}
     Prefabs:
       NetworkPrefabsLists: []
     TickRate: 30
@@ -1104,7 +1104,7 @@ GameObject:
   - component: {fileID: 1937494291}
   - component: {fileID: 1937494290}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
