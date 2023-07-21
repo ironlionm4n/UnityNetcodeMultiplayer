@@ -24,8 +24,16 @@ namespace Input
 
         public void OnMove(InputAction.CallbackContext context)
         {
-            var inputValue = context.ReadValue<Vector2>();
-            PlayerMoving?.Invoke(inputValue);
+            if (context.performed)
+            {
+                var inputValue = context.ReadValue<Vector2>();
+                Debug.Log(inputValue);
+                PlayerMoving?.Invoke(inputValue);
+            }
+            else if (context.canceled)
+            {
+                PlayerMoving?.Invoke(Vector2.zero);
+            }
         }
 
         public void OnPrimaryFire(InputAction.CallbackContext context)
