@@ -160,6 +160,7 @@ GameObject:
   - component: {fileID: 7823790597398805291}
   - component: {fileID: 2654509796705941087}
   - component: {fileID: 6334862434011861587}
+  - component: {fileID: 7870477866379826701}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -277,6 +278,20 @@ MonoBehaviour:
   tankRigidbody: {fileID: 2654509796705941087}
   movementSpeed: 10
   turnRotationSpeed: 180
+--- !u!114 &7870477866379826701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3088307325611145763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec75e258ccc449d91df988e331a0b23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputReader: {fileID: 11400000, guid: 62ed62b9383bdf74eb0d7823e7fca10f, type: 2}
+  turretTransform: {fileID: 4534292569880309540}
 --- !u!1 &3543587036088803038
 GameObject:
   m_ObjectHideFlags: 0

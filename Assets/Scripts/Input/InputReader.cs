@@ -10,6 +10,8 @@ namespace Input
         public event Action<bool> PrimaryFireEvent;
         public event Action<Vector2> PlayerMoving;
         
+        public Vector2 AimPosition { get; private set; }
+        
         private PlayerControls _playerControls;
         private void OnEnable()
         {
@@ -34,6 +36,12 @@ namespace Input
             {
                 PlayerMoving?.Invoke(Vector2.zero);
             }
+        }
+
+        public void OnAim(InputAction.CallbackContext context)
+        {
+            var mousePosition = context.ReadValue<Vector2>();
+            AimPosition = mousePosition;
         }
 
         public void OnPrimaryFire(InputAction.CallbackContext context)
